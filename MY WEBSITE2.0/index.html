@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zoom Tire</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Zoom Tire</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="Contact Us.html">Contact Us</a></li>
+    </ul>
+    <div class="nav-extra">
+      <a href="about us.html">About Us</a>
+      <a href="login.html">Login/Sign Up</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <h1>WELCOME TO ZOOM TIRE</h1>
+      <p>Welcome to Zoom Tire — your trusted destination for high-quality tires and exceptional service. Whether you're looking for all-season, performance, or off-road tires, we’ve got the right fit for your vehicle and your budget. We’re here to keep you safe and rolling smoothly on every journey.</p>
+      
+    </div>
+  </header>
+
+  <section id="features" class="page-section">
+    <h2>Our Features</h2>
+    <div class="feature-icons">
+      <div class="feature-item">
+        <img src="images/good.webp" alt="Tire Service">
+        <h3>Quality Tires</h3>
+        <p>Wide selection of top-rated tire brands.</p>
+      </div>
+      <div class="feature-item">
+        <img src="images/fast.webp" alt="Installation">
+        <h3>Fast Installation</h3>
+        <p>Quick and hassle-free tire installation services.</p>
+      </div>
+      <div class="feature-item">
+        <img src="images/repair.jpg" alt="Repair">
+        <h3>Repairs & Maintenance</h3>
+        <p>Comprehensive tire repair and maintenance services.</p>
+      </div>
+    </div>
+    <button onclick="navigateTo('services')">See Services</button>
+  </section>
+
+  <section id="about" class="page-section">
+    <h2>About Us</h2>
+    <p>At Zoom Tire, we’re more than just a tire shop — we’re your local tire experts with years of experience. We offer quality products, expert advice, and services you can trust. Whether you need new tires, repairs, or maintenance, our team is here to help with honesty, transparency, and fair pricing. Our goal is to keep you safe, comfortable, and confident on every road. Thank you for choosing Zoom Tire. We look forward to serving you and keeping your wheels rolling smoothly.</p>
+    <button onclick="window.location.href='Contact Us.html'">Contact Us</button>
+  </section>
+
+  <section id="testimonials" class="page-section">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonials-container">
+      <div class="testimonial-card">
+        <p>"Best tire service in town! Quick, reliable, and affordable. Highly recommend!"</p>
+        <h3>- Jane Doe</h3>
+      </div>
+      <div class="testimonial-card">
+        <p>"Zoom Tire helped me find the perfect tires for my car. Great customer service!"</p>
+        <h3>- John Smith</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="promotions" class="page-section">
+    <h2>Special Offers</h2>
+    <p>Get up to 20% off on your next tire purchase! Limited time only.</p>
+    <button onclick="window.location.href='login.html'">Shop Now</button>
+  </section>
+
+  <section id="services" class="page-section">
+    <h2>Our Services</h2>
+    <p>Conveniently schedule your tire services online at a time that works for you. Our easy-to-use booking system makes getting your tires serviced a breeze.</p>
+    <button onclick="window.location.href='Contact Us.html'">Contact Us</button>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Zoom Tire. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function navigateTo(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+
+</body>
+</html>
